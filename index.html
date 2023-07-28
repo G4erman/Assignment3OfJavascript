@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smoothie Order Form</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  <h1>Smoothie Order Form</h1>
+  <form id="smoothieForm">
+    <label for="flavor">Choose a flavor:</label>
+    <select id="flavor" name="flavor" required>
+      <option value="strawberry">Strawberry</option>
+      <option value="banana">Banana</option>
+      <option value="mango">Mango</option>
+      <option value="blueberry">Blueberry</option>
+      <option value="pineapple">Pineapple</option>
+      <option value="kiwi">Kiwi</option>
+      <option value="peach">Peach</option>
+    </select><br>
+
+    <label for="milk">Select milk type:</label>
+    <input type="radio" id="milkCow" name="milk" value="cow" required>
+    <label for="milkCow">Cow's Milk</label>
+    <input type="radio" id="milkAlmond" name="milk" value="almond">
+    <label for="milkAlmond">Almond Milk</label>
+    <input type="radio" id="milkSoy" name="milk" value="soy">
+    <label for="milkSoy">Soy Milk</label><br>
+
+    <label for="sweetener">Select sweetener:</label>
+    <input type="checkbox" id="sweetenerHoney" name="sweetener" value="honey">
+    <label for="sweetenerHoney">Honey</label>
+    <input type="checkbox" id="sweetenerSugar" name="sweetener" value="sugar">
+    <label for="sweetenerSugar">Sugar</label>
+    <input type="checkbox" id="sweetenerStevia" name="sweetener" value="stevia">
+    <label for="sweetenerStevia">Stevia</label><br>
+
+    <label for="toppings">Choose toppings (optional):</label><br>
+    <input type="checkbox" id="toppingWhippedCream" name= "toppings" value= "whipped cream">
+    <label for= "toppingWhippedCream">Whipped Cream</label>
+    <input type= "checkbox" id= "toppingChocoChips" name= "toppings" value= "chocolate chips">
+    <label for= "toppingChocoChips">Chocolate Chips</label><br>
+
+    <button type= "submit">Order Now!</button>
+  </form>
+  <div id= "order"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+
